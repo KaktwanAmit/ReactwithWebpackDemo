@@ -27,7 +27,8 @@
     box-shadow: 0 2px 2px #ccc;
 }
 .formContainer{
-        display: 'flex',
+        display: 'flex';
+        margin-bottom:4px;
 }
 .textField{
     margin-left: 10px;
