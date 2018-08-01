@@ -1,0 +1,13 @@
+.main{
+    width:80%;
+    height:100%;
+    border:1px solid #eee;
+    box-shadow: 0 2px 2px #ccc;
+    text-align: center;
+    margin:10px auto;
+    padding: 20px;
+    overflow-X: 'auto';
+}
+.table{
+    width:600px;
+}
