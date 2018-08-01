@@ -67,12 +67,12 @@ class Test extends Component {
           }]
     }
     componentDidMount(){
-        Axios.get('http://localhost:3000/data').
-        then(res=>{
-            console.log('response',res.data)
-          let data=res.data;
-            this.setState({preData:data});
-        });
+        // Axios.get('http://localhost:3000/data').
+        // then(res=>{
+        //     console.log('response',res.data)
+        //   let data=res.data;
+        //     this.setState({preData:data});
+        // });
         // console.log('dataaaaaaaaaaaaaaa',this.state.preData);
     }
     _demo=()=>{
