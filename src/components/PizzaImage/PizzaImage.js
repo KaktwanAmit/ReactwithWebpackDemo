@@ -1,7 +1,7 @@
 import React from 'react';
 
 import classes from './PizzaImage.css';
-import PizzaImage from '../../assets/pizza.jpeg';
+import PizzaImage from '../../assets/pizzas.jpg';
 
 import Test from '../TestComponent/Test';
 
@@ -11,7 +11,9 @@ const pizzaImage = (props)=>{
            <div className={classes.PizaImage}>
                <img src={PizzaImage} className={classes.PizaImg} />
            </div>
-           <Test/>
+           <div>
+               <Test />
+           </div>
        </div>
   
 )

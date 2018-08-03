@@ -80,7 +80,10 @@ class Test extends Component {
         // browserHistory.push('/table');
         this.props.history.push("/table");
     }
-
+    _redirectToForm=()=>{
+        console.log('inside form redirection');
+        this.props.history.push('/posts');
+    }
     // handleChange = name => event => {
     //     this.setState({
     //       [name]: event.target.value,
@@ -90,14 +93,12 @@ class Test extends Component {
         this.refs.textInput.focus();
     }
     update = (e) => {
-        //   this.setState({saying:this.refs.textInput.value});
-        this.setState({ saying: e.target.value });
+          this.setState({saying:this.refs.textInput.value});
+        // this.setState({ saying: e.target.value });
         console.log('this.textinput.value', this.refs.textInput.value);
     }
     handleUpdateInput = () => {
         //conditions////////////
-        // this.setState({searchText:value});
-        // console.log("searchText-------------",value);
     }
     handleNewRequest = (value) => {
         this.setState({ searchText: value });
@@ -107,12 +108,14 @@ class Test extends Component {
         console.log('pre data', this.state.preData);
         return (
             <div className={classes.informationDiv}>
-                <span>Hi there information</span>
+                <span>Hi there, This is TEST Component</span>
                 <div className={classes.buttonStyle}>
                     <Button variant="outlined" color="primary" onClick={this._demo} >
-                        Open Table
+                        Go to Table Component
+                    </Button> 
+                    <Button variant="outlined" color="primary" onClick={this._redirectToForm}  >
+                        Go to Form Component
                     </Button>
-                    
 
                 </div>
                 <hr />
@@ -131,7 +134,8 @@ class Test extends Component {
                                 value="Focus the text input"
                                 onClick={this.focusTextInput}
                             />
-                        </span>{this.state.saying}
+                        </span>
+                        {this.state.saying}
                     </form>
                </div>
                <hr/>
